@@ -14,9 +14,10 @@ export default function Home() {
       <h1 className="text-6xl font-bold mb-6">{ count }</h1>
 
       <div className="flex flex-row">
-        <Button className="mr-5" text="Plus" onClick={() => setCount(count + 1)} />
+        <Button className="bg-red-500 hover:bg-red-700 mr-5" text="Plus" onClick={() => setCount(count + 1)} />
         <Button className="bg-blue-500 hover:bg-blue-700" text="Minus" onClick={() => setCount(count - 1)} />
       </div>
+      
     </div>
   );
 }
